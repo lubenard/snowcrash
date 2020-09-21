@@ -5,6 +5,7 @@ Pcap est un format de fichier contenant des échanges réseau.
 Il faut donc utiliser wireshark pour exploiter ce fichier.
 
 En ouvrant le fichier en hexadécimal, on peut voir le mot 'login' ainsi que 'password' contenu dedans.
+clic droit, follow stream, show in hexdump --> permet de voir facilement le code hexa du mdp
 
 En appliquant le filtre 'data.data && ip.src== 59.233.235.218' et en regardant entre les packets 22 et 85, on peut voir que la partie data des packets contient (une lettre a chaque fois): 
 
