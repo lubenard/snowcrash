@@ -1,0 +1,7 @@
+Le fichier level04.pl est un fichier de Perl Script
+
+Il possède aussi un setuid
+
+On peut voir en commentaire qu'un serveur apache2 tourne a l'addresse localhost:4747
+
+Ce peut etre confirmé par le fait qu'on puisse s'y connecter avec telnet (telnet localhost 4747) ainsi qu'avec les taches du système (ps -aux | grep apache2).

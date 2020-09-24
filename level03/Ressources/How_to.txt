@@ -45,9 +45,24 @@ setresgid() sets the real GID, effective GID, and saved set-group-ID of the call
 
 system() executes a command specified in command by calling /bin/sh -c command, and returns after the command has been completed. During execution of the command, SIGCHLD will be blocked, and SIGINT and SIGQUIT will be ignored.
 
-
 Pendant l'execution, on peut voir que l'uid et le gid valent 2003 (uid et gid de level03)
 
 On peut changer l'uid et le gid de l'executable en utilisant gdb:
 
 voir: https://scc.ustc.edu.cn/zlsc/sugon/intel/debugger/cl/commandref/gdb_mode/cmd_set_variable.htm
+
+Après de nombreux essais infructueux de changer le texte de "/usr/bin/env echo Exploit me", j'ai abandonné cette methode.
+
+En faisant un essai sur mon ordinateur hote, avec le meme code, je me suis apercu que, meme lancé avec les droits de flag03, /usr/bin/env garde les variables d'environnement de level03.
+
+On peut donc faire une redirection de path.
+
+De plus, /tmp est accessible en écriture.
+
+On peut alors exploiter le path !
+
+echo "/bin/getflag" > /tmp/echo
+
+export PATH=/tmp
+
+./level03
