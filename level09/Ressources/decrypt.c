@@ -7,8 +7,9 @@ int main(int argc, char **argv) {
 			printf("%c", argv[1][i] - i);
 			i++;
 		}
+		printf("\n");
 	} else {
-		printf("No text provided");
+		printf("No text provided\n");
 	}
 	return (0);
 }

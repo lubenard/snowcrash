@@ -20,4 +20,4 @@ done
 
 Il lance le contenu des fichiers dans un bash.
 
-Il suffit alors de faire "echo "getflag > /tmp/pass" > /opt/openarenaserver ", puis d'attendre 2 minutes. On voit alors apparaitre dans le fichier /tmp/pass le flag
+Il suffit alors de faire "echo "getflag > /tmp/pass" > /opt/openarenaserver/getflag ", puis d'attendre 2 minutes. On voit alors apparaitre dans le fichier /tmp/pass le flag

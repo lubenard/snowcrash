@@ -1,6 +1,6 @@
 On peut voir deux fichier dans le home.
 
-Un fichier level06.php et un fichier level06 qui est un programme C.
+Un fichier level06.php et un fichier level06 qui est un programme C compilé.
 
 Ce dernier possède un bit SUID.
 

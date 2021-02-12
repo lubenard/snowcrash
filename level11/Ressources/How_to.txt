@@ -2,11 +2,11 @@ The file present is a Lua file.
 
 The file is having a SUID bit, so we might be able to exploit it.
 
-// To complete
+There is a sha1 hash inside, but it is a false path; The decryption of its content only say: NotSoEasy (https://www.dcode.fr/sha1-hash)
 
-There is a md5 hash inside, but it is a false path
+We can create a code injection
 
-We cam create a code execution, by connecting doing:
+First, we need to connect:
 
 nc 127.0.0.1 5151
 
@@ -18,4 +18,4 @@ then,
 
 cat /tmp/truc
 
-And the token is given
+The file contains to token to connect to level12
