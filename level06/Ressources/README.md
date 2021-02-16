@@ -1,3 +1,9 @@
+# Level06
+
+[ENGLISH version](README_EN.md)
+
+## Comment récuperer le flag
+
 On peut voir deux fichier dans le home.
 
 Un fichier level06.php et un fichier level06 qui est un programme C compilé.
@@ -14,8 +20,10 @@ On peut aussi voir que le fichier PHP essaie d'acceder a un fichier, avec get_fi
 
 En se basant sur les challenges precedent, on peut réussir a executer des commandes en utilisant des sous shells. Par exemple,
 
+```
 echo "$(getflag) > /tmp/pass2" > /tmp/test
 ./level06 /tmp/test 
+```
 
 retourne:
 
@@ -24,5 +32,11 @@ Nope there is no token here for you sorry. Try again :) > /tmp/pass2
 
 En debugant les regex, on peut récuperer le flag en faisant:
 
+```
 echo '[x {${system(getflag)}}]' > /tmp/test
 ./level06 /tmp/test
+```
+
+## Le flag
+
+Le flag lu est celui utilisable pour se connecter a level06

@@ -1,3 +1,9 @@
+# Level02
+
+[ENGLISH version](README_EN.md)
+
+## Comment récupérer le flag
+
 Le fichier level02 est un fichier portant l'extension pcap.
 
 Pcap est un format de fichier contenant des échanges réseau.
@@ -23,3 +29,10 @@ En regardant de plus près le contenu en hexa, on peut voir la charactère 'xter
 En regardant de plus près les characteres étant des '.', on s'appercoit alors que c'est la traduction hexadécimale du charactère 'delete' (Code ascii 127)
 
 Si on supprime les 3 dernières lettres, on obtient alors: ft_waNDReL0L
+
+## Le flag
+
+Le flag pour se connecter a flag02
+```
+ft_waNDReL0L
+```

@@ -1,3 +1,9 @@
+# Level09
+
+[ENGLISH version](README_EN.md)
+
+## Comment récuperer le flag
+
 Le level 9 contient deux fichier.
 
 1 executable et 1 fichier token
@@ -21,14 +27,19 @@ On peut supposer que l'executable a permis d'encoder le fichier, et que c'est a 
 
 En faisant un petit programme en C, on peut passer le fichier token, et obtenir une réponse lisible.
 
+```
 cd /tmp
-
 gcc decrypt.c
-
 cd ~/
-
 /tmp/a.out $(cat token)
+```
 
 Ce qui nous donne le token suivant: f3iji1ju5yuevaus41q1afiuq
+
+## Le flag
+
+```
+f3iji1ju5yuevaus41q1afiuq
+```
 
 Ce token permet de se connecter au flag09 et de récuperer le token pour le level 10

