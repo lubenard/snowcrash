@@ -29,7 +29,7 @@ Le fait que le fichier s'appelle john peut faire penser a John The Ripper, mais 
 
 Les charactères étant seulement alphabétiques, cela peut faire penser a un ROT 13, ou un chiffrement de César.
 
-Le rot 13 n'a pas l'air de fonctionne, mais en le passant dans un chiffrement de césar (https://www.dcode.fr/chiffre-cesar), avec l'option: Tester tous les décallages possibles, on peut voir que le premier résultat est: nottoohardhere
+Le rot 13 n'a pas l'air de fonctionne, mais en le passant dans un chiffrement de césar (https://www.dcode.fr/chiffre-cesar), avec l'option: Tester tous les décallages possibles, on peut voir que le premier résultat est: nottoohardhere (avec un décallage de +15)
 
 Le mot de passe est bien valide pour se connecter au user flag00
 

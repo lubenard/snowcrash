@@ -29,7 +29,7 @@ The fact that the file is called john may make you think of John The Ripper, but
 
 The characters are only alphabetical, so it may look like ROT 13, or Caesar encryption.
 
-ROT 13 doesn't seem to work, but by passing it in a Caesar encryption (https://www.dcode.fr/chiffre-cesar), with the option: Test all possible shifts, we can see that the first result is: nottoohardhere.
+ROT 13 doesn't seem to work, but by passing it in a Caesar encryption (https://www.dcode.fr/chiffre-cesar), with the option: Test all possible shifts, we can see that the first result is: nottoohardhere. (with a shift of +15)
 
 The password is valid to connect to user flag00.
 
