@@ -34,8 +34,4 @@ The file contains to token to connect to level12
 
 ## The flag
 
-```
-
-```
-
-We can use this token to connect to flag11, and launch getflag to access level12
+We can use this token to connect to level12

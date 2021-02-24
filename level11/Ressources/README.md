@@ -30,12 +30,8 @@ alors,
 cat /tmp/truc
 ```
 
-Le fichier contient un jeton pour se connecter au flag11
+Le fichier contient un jeton pour se connecter au level12
 
 ## Le drapeau
 
-```
-
-```
-
-Nous pouvons utiliser ce jeton pour nous connecter à flag11, et lancer getflag pour accéder au niveau12
+Nous pouvons utiliser ce jeton pour nous connecter à level12
